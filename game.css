@@ -1,0 +1,72 @@
+#gameContainer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #170404;
+    overflow: hidden;
+    font-family: 'Press Start 2P', monospace;
+}
+
+#gameArea{
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    background: #111;
+    border: 4px solid #00ffcc;
+    box-shadow: 0 0 20px #00ffcc inset;
+    position: relative;
+    image-rendering: pixelated;
+}
+
+#gameCanvas{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.game-buttons{
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.game-buttons button{
+    padding: 10px 25px;
+    font-size: 14px;
+    background: #ff00cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px #00ffcc;
+    transition: 0.2s;
+}
+
+.game-buttons button:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px #00ffcc;
+}
+
+#scoreDisplay{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #00ffcc;
+    font-size: 16px;
+    text-shadow: 1px 1px #ff00cc;
+}
+
+#backgroundOverlay {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: url('heneral.jpg') center center / cover no-repeat;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index:0;
+}

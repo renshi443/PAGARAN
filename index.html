@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>George Adventure - Menu</title>
+<link rel="stylesheet" href="intro.css">
+</head>
+<body>
+
+<!-- Subtle background image overlay -->
+<div id="backgroundOverlay"></div>
+
+<div id="pixelBg"></div>
+
+<div class="menu-container">
+    <h1 class="title">GEORGE ADVENTURE!</h1>
+
+    <div class="menu-buttons" id="mainButtons">
+        <button onclick="startGame()">▶ START</button>
+    </div>
+</div>
+
+<script src="intro.js"></script>
+<script src="pixelBg.js"></script>
+<script>
+function startGame() {
+    window.location.href = "game.html";
+}
+</script>
+
+</body>
+</html>
